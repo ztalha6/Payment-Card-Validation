@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   var _paymentCard = PaymentCard();
   var _autoValidateMode = AutovalidateMode.disabled;
 
-  var _card = new PaymentCard();
+  // var _card = new PaymentCard();
 
   @override
   void initState() {
@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       labelText: 'Card Name',
                     ),
                     onSaved: (String? value) {
-                      _card.name = value;
+                      _paymentCard.name = value;
                     },
                     keyboardType: TextInputType.text,
                     validator: (String? value) =>
